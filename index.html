@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew Haven | Handcrafted Coffee, Made Slow</title>
+<meta name="description" content="Brew Haven is a specialty coffee house serving carefully roasted, freshly brewed coffee in a warm, welcoming space.">
+<meta property="og:title" content="Brew Haven | Handcrafted Coffee">
+<meta property="og:description" content="A specialty coffee house serving carefully roasted, freshly brewed coffee.">
+<meta property="og:url" content="لینک زنده‌ی سایتت بعد از لایو شدن">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#home" class="logo">Brew&nbsp;Haven</a>
+
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-nav-link>Home</a></li>
+        <li><a href="#about" data-nav-link>About</a></li>
+        <li><a href="#menu" data-nav-link>Menu</a></li>
+        <li><a href="#reserve" data-nav-link>Reserve</a></li>
+        <li><a href="#reviews" data-nav-link>Reviews</a></li>
+        <li><a href="#contact" data-nav-link>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="17" x2="20" y2="17"></line>
+        </svg>
+      </button>
+
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"></line>
+          <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"></line>
+          <line x1="18.4" y1="5.6" x2="19.8" y2="4.2"></line>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+        </svg>
+      </button>
+
+      <button class="icon-btn cart-btn" id="cartBtn" type="button" aria-label="Open cart, 0 items" aria-haspopup="dialog">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="19" cy="21" r="1"></circle>
+          <path d="M2.5 3h2l2.4 12.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6"></path>
+        </svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Small batch &middot; Slow roasted</p>
+        <h1>Freshly brewed<br>happiness, every cup.</h1>
+        <p class="lead">We source, roast and brew coffee the way it deserves to be treated &mdash; with patience, care, and a genuine love for the craft.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#about" class="btn btn-ghost">Our Story</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 220 220" fill="none">
+          <path d="M45 78 H165 L152 178 a20 20 0 0 1-20 18 H85 a20 20 0 0 1-20-18 L45 78Z" class="art-cup"/>
+          <path d="M165 88 h22 a20 20 0 0 1 0 40 h-18" class="art-cup"/>
+          <path d="M70 46 c-7-11 6-16 2-27" class="art-steam"/>
+          <path d="M105 46 c-7-11 6-16 2-27" class="art-steam"/>
+          <path d="M140 46 c-7-11 6-16 2-27" class="art-steam"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats reveal">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-num">12</span>
+        <span class="stat-label">Years roasting</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Ethically sourced beans</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">50k+</span>
+        <span class="stat-label">Cups served yearly</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid reveal">
+      <div class="about-copy">
+        <p class="eyebrow">About Us</p>
+        <h2>A neighborhood coffee house, done properly.</h2>
+        <p>Brew Haven started as a single roaster in a small back room. Today, we still roast in-house every week, in small batches, so every cup we pour is close to the bean it came from. No shortcuts, no syrups pretending to be flavor &mdash; just coffee, made with intention.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Menu</p>
+        <h2>Featured Drinks &amp; Bakes</h2>
+        <p class="section-sub">Tap any item to customize it and add it to your cart.</p>
+      </div>
+
+      <div class="menu-filters reveal">
+        <div class="filter-group" role="group" aria-label="Filter by category">
+          <button class="chip active" data-filter="all" type="button">All</button>
+          <button class="chip" data-filter="cake" type="button">Cakes</button>
+          <button class="chip" data-filter="hot" type="button">Hot Drinks</button>
+          <button class="chip" data-filter="cold" type="button">Cold Drinks</button>
+        </div>
+        <div class="filter-group" role="group" aria-label="Sort by price">
+          <button class="chip chip-sort" data-sort="asc" type="button">Price: Low to High</button>
+          <button class="chip chip-sort" data-sort="desc" type="button">Price: High to Low</button>
+        </div>
+      </div>
+
+      <p class="menu-empty" id="menuEmpty" hidden>No items match this filter.</p>
+      <div class="grid menu-grid" id="menuGrid">
+      </div>
+    </div>
+  </section>
+
+  <section class="why reveal">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2>What makes a cup worth coming back for</h2>
+      </div>
+
+      <div class="why-grid">
+        <article class="why-card">
+          <span class="why-icon" aria-hidden="true">&#127823;</span>
+          <h3>Beans, roasted weekly</h3>
+          <p>We roast in small batches so nothing sits on a shelf losing flavor.</p>
+        </article>
+        <article class="why-card">
+          <span class="why-icon" aria-hidden="true">&#128337;</span>
+          <h3>Brewed to order</h3>
+          <p>Every cup is made fresh when you order it &mdash; never sitting in a pot.</p>
+        </article>
+        <article class="why-card">
+          <span class="why-icon" aria-hidden="true">&#127793;</span>
+          <h3>Responsibly sourced</h3>
+          <p>Direct trade relationships with farms we've worked with for years.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="reserve" id="reserve">
+    <div class="container reveal">
+      <div class="section-head">
+        <p class="eyebrow">Visit Us</p>
+        <h2>Reserve a Table</h2>
+        <p class="section-sub">Pick a table on the map, choose a time, and confirm.</p>
+      </div>
+
+      <div class="reserve-layout">
+        <div class="table-map-wrap">
+          <svg class="table-map" id="tableMap" viewBox="0 0 320 320" role="group" aria-label="Café floor plan, select a table">
+            <path d="M70 60 H250 L232 260 a26 26 0 0 1-26 24 H124 a26 26 0 0 1-26-24 L70 60Z" class="map-outline"/>
+            <path d="M250 78 h26 a26 26 0 0 1 0 52 h-20" class="map-outline"/>
+          </svg>
+        </div>
+
+        <div class="reserve-panel">
+          <p id="reserveStatus" class="reserve-status">Select a table on the map to begin.</p>
+
+          <div class="reserve-form" id="reserveForm" hidden>
+            <label class="option-label" for="reserveTime">Arrival time</label>
+            <select id="reserveTime">
+              <option value="09:00">9:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="17:00">5:00 PM</option>
+              <option value="19:00">7:00 PM</option>
+            </select>
+            <div class="reserve-actions">
+              <button class="btn btn-primary" id="confirmReserveBtn" type="button">Confirm Reservation</button>
+              <button class="btn btn-ghost" id="cancelReserveBtn" type="button">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="reviews">
+    <div class="container reveal">
+      <div class="section-head">
+        <p class="eyebrow">Reviews</p>
+        <h2>What people are saying</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial">
+          <p>&ldquo;Best flat white in the city, hands down. The space is calm enough to actually get work done too.&rdquo;</p>
+          <cite>&mdash; Maya R.</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>&ldquo;You can taste the difference when someone actually cares about the beans. I drive across town for this.&rdquo;</p>
+          <cite>&mdash; Daniel K.</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>&ldquo;Friendly staff, cozy corner seats, and a menu that doesn't drown the coffee in sugar. My weekend spot now.&rdquo;</p>
+          <cite>&mdash; Priya S.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter reveal" id="contact">
+    <div class="container newsletter-inner">
+      <div>
+        <h2>Get first pour on new roasts</h2>
+        <p>One short email a month. No spam, just what's new in the cup.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <label class="visually-hidden" for="newsletterEmail">Email address</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="form-message" id="newsletterMessage" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="logo">Brew&nbsp;Haven</p>
+      <p class="footer-tag">Handcrafted coffee, made slow.</p>
+    </div>
+
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-links" aria-label="Social media">
+      <a href="#" aria-label="Instagram" class="icon-btn">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="icon-btn">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.9c-.7.3-1.5.6-2.3.7a4 4 0 0 0 1.8-2.2 8 8 0 0 1-2.5 1 4 4 0 0 0-6.9 3.6A11.4 11.4 0 0 1 3.7 4.6a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.7-.5v.1a4 4 0 0 0 3.2 3.9c-.6.1-1.2.2-1.8.1a4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.4a11.3 11.3 0 0 0 6.1 1.8c7.3 0 11.3-6.1 11.3-11.3v-.5c.8-.6 1.4-1.3 1.9-2.1Z"></path></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Brew Haven. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+  <div class="drawer-head">
+    <h2 id="cartTitle">Your Cart</h2>
+    <button class="icon-btn" id="closeDrawer" type="button" aria-label="Close cart">&times;</button>
+  </div>
+
+  <div class="drawer-items" id="drawerItems">
+  </div>
+
+  <div class="drawer-foot">
+    <div class="drawer-subtotal">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">$0.00</span>
+    </div>
+    <button class="btn btn-primary checkout-btn" id="checkoutBtn" type="button" disabled>Checkout</button>
+  </div>
+</aside>
+
+
+<div class="overlay" id="customizeOverlay" hidden></div>
+
+<div class="customize-modal" id="customizeModal" role="dialog" aria-modal="true" aria-labelledby="customizeTitle" hidden>
+  <div class="drawer-head">
+    <h2 id="customizeTitle">Item</h2>
+    <button class="icon-btn" id="closeCustomize" type="button" aria-label="Close">&times;</button>
+  </div>
+
+  <p class="customize-fact" id="customizeFact"></p>
+
+  <div class="customize-body">
+    <div class="option-group" id="sizeGroup" hidden>
+      <span class="option-label">Size</span>
+      <div class="option-choices" id="sizeChoices"></div>
+    </div>
+    <div class="option-group" id="milkGroup" hidden>
+      <span class="option-label">Milk</span>
+      <div class="option-choices" id="milkChoices"></div>
+    </div>
+    <div class="option-group" id="shotGroup" hidden>
+      <span class="option-label">Extra Shots</span>
+      <div class="qty-control">
+        <button id="shotDecrease" type="button" aria-label="Fewer extra shots">&minus;</button>
+        <span id="shotCount">0</span>
+        <button id="shotIncrease" type="button" aria-label="More extra shots">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-foot">
+    <div class="drawer-subtotal">
+      <span>Total</span>
+      <span id="customizeTotal">$0.00</span>
+    </div>
+    <button class="btn btn-primary" id="customizeAddBtn" type="button">Add to Cart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
